@@ -1,7 +1,10 @@
-let age: number = 20;
+// Built-In Types
+let sales: number = 123_456_789; // OR let sales = 123_456_789;
+let course: string = 'TypeScript'; // OR let course = 'TypeScript';
+let is_published: boolean = true; // OR let is_published = true;
+let level: any; // OR let level;
 
-if (age < 40) {
-    age += 10;
-}
-
-console.log('Age: ' + age);
+console.log('Sales: ' + sales);
+console.log('Course: ' + course);
+console.log('Is Published: ' + is_published);
+console.log('Level: ' + level);
