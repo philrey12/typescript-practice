@@ -8,3 +8,14 @@ console.log('Sales: ' + sales);
 console.log('Course: ' + course);
 console.log('Is Published: ' + is_published);
 console.log('Level: ' + level);
+
+// -----------------------------------------------------------
+
+// Arrays
+let numbers: number[] = [1, 2, 3];
+
+numbers.forEach(n => {
+    console.log(n);
+});
+
+// -----------------------------------------------------------
