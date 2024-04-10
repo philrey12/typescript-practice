@@ -14,13 +14,16 @@ numbers.forEach(n => {
 let user1 = [1001, 'Philip'];
 console.log('ID: ' + user1[0]);
 console.log('Name: ' + user1[1]);
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 1] = "Small";
-    Size[Size["Medium"] = 2] = "Medium";
-    Size[Size["Large"] = 3] = "Large";
-})(Size || (Size = {}));
+var SizeA;
+(function (SizeA) {
+    SizeA[SizeA["Small"] = 1] = "Small";
+    SizeA[SizeA["Medium"] = 2] = "Medium";
+    SizeA[SizeA["Large"] = 3] = "Large";
+})(SizeA || (SizeA = {}));
 ;
-let mySize = Size.Medium;
-console.log('Size: ' + mySize);
+let mySizeA = SizeA.Medium;
+console.log('Size: ' + mySizeA);
+;
+let mySizeB = 3;
+console.log('Size: ' + mySizeB);
 //# sourceMappingURL=index.js.map

@@ -30,7 +30,12 @@ console.log('Name: ' + user1[1]);
 // -----------------------------------------------------------
 
 // Enums
-enum Size { Small = 1, Medium = 2, Large = 3 };
-let mySize: Size = Size.Medium;
+enum SizeA { Small = 1, Medium = 2, Large = 3 };
+let mySizeA: SizeA = SizeA.Medium;
 
-console.log('Size: ' + mySize);
+console.log('Size: ' + mySizeA);
+
+const enum SizeB { Small = 1, Medium = 2, Large = 3 }; // optimized compiled js code
+let mySizeB: SizeB = SizeB.Large;
+
+console.log('Size: ' + mySizeB);
