@@ -7,7 +7,7 @@ let level: any; // OR let level;
 console.log('Sales: ' + sales);
 console.log('Course: ' + course);
 console.log('Is Published: ' + is_published);
-console.log('Level: ' + level);
+console.log('Level: ' + level); // undefined
 
 // -----------------------------------------------------------
 
@@ -24,5 +24,13 @@ numbers.forEach(n => {
 let user1: [number, string] = [1001, 'Philip']; // correct
 // let user2: [number, string] = [1001, 'Philip', true]; // incorrect
 
-console.log('ID: ' + user1[0].valueOf);
-console.log('Name: ' + user1[1].valueOf);
+console.log('ID: ' + user1[0]);
+console.log('Name: ' + user1[1]);
+
+// -----------------------------------------------------------
+
+// Enums
+enum Size { Small = 1, Medium = 2, Large = 3 };
+let mySize: Size = Size.Medium;
+
+console.log('Size: ' + mySize);
