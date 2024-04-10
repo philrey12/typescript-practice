@@ -19,3 +19,10 @@ numbers.forEach(n => {
 });
 
 // -----------------------------------------------------------
+
+// Tuples
+let user1: [number, string] = [1001, 'Philip']; // correct
+// let user2: [number, string] = [1001, 'Philip', true]; // incorrect
+
+console.log('ID: ' + user1[0].valueOf);
+console.log('Name: ' + user1[1].valueOf);
