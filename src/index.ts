@@ -30,12 +30,12 @@ console.log('Name: ' + user1[1]);
 // -----------------------------------------------------------
 
 // Enums
-enum SizeA { Small = 1, Medium = 2, Large = 3 };
+enum SizeA { Small = 1, Medium = 2, Large = 3 }
 let mySizeA: SizeA = SizeA.Medium;
 
 console.log('Size: ' + mySizeA);
 
-const enum SizeB { Small = 1, Medium = 2, Large = 3 }; // optimized compiled js code
+const enum SizeB { Small = 1, Medium = 2, Large = 3 } // optimized compiled js code
 let mySizeB: SizeB = SizeB.Large;
 
 console.log('Size: ' + mySizeB);
@@ -48,7 +48,7 @@ function calculateTax(income: number, taxYear: number = 2022): number {
         return income * 1.2;
     }
     return income * 1.3;
-}
+};
 
 calculateTax(10_000);
 
@@ -65,7 +65,7 @@ let employeeSample1: {
     retire: (date: Date) => {
         console.log(date);
     }
-};
+}
 
 // -----------------------------------------------------------
 
@@ -82,7 +82,7 @@ let employeeSample2: Employee = {
     retire: (date: Date) => {
         console.log(date);
     }
-};
+}
 
 // -----------------------------------------------------------
 
@@ -98,3 +98,21 @@ function kgToLbs(weight: number | string): number {
 
 kgToLbs(10);
 kgToLbs('10kg');
+
+// -----------------------------------------------------------
+
+// Intersection Types
+type Draggable = {
+    drag: () => void
+}
+
+type Resizable = {
+    resize: () => void
+}
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+    drag: () => { },
+    resize: () => { }
+}

@@ -20,10 +20,8 @@ var SizeA;
     SizeA[SizeA["Medium"] = 2] = "Medium";
     SizeA[SizeA["Large"] = 3] = "Large";
 })(SizeA || (SizeA = {}));
-;
 let mySizeA = SizeA.Medium;
 console.log('Size: ' + mySizeA);
-;
 let mySizeB = 3;
 console.log('Size: ' + mySizeB);
 function calculateTax(income, taxYear = 2022) {
@@ -32,6 +30,7 @@ function calculateTax(income, taxYear = 2022) {
     }
     return income * 1.3;
 }
+;
 calculateTax(10000);
 let employeeSample1 = {
     id: 1,
@@ -57,4 +56,8 @@ function kgToLbs(weight) {
 }
 kgToLbs(10);
 kgToLbs('10kg');
+let textBox = {
+    drag: () => { },
+    resize: () => { }
+};
 //# sourceMappingURL=index.js.map
