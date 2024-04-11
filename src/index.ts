@@ -55,11 +55,28 @@ calculateTax(10_000);
 // -----------------------------------------------------------
 
 // Objects
-let employee: {
+let employeeSample1: {
     readonly id: number, // 'readonly' prevents modification of value
     name: string,
     retire: (date: Date) => void
 } = {
+    id: 1,
+    name: 'Philip',
+    retire: (date: Date) => {
+        console.log(date);
+    }
+};
+
+// -----------------------------------------------------------
+
+// Type Aliases
+type Employee = {
+    readonly id: number, // 'readonly' prevents modification of value
+    name: string,
+    retire: (date: Date) => void
+}
+
+let employeeSample2: Employee = {
     id: 1,
     name: 'Philip',
     retire: (date: Date) => {
